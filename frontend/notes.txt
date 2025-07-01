@@ -1,0 +1,6 @@
+1. project setup using vite
+2. added packages reacter-roter-dom, react-router
+3. setup tailwing
+4. create folders pages, context, components
+5. created different components inside pages
+6. setup route inside app.jsx

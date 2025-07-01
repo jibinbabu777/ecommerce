@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import About from './pages/About';
 import Cart from './pages/Cart';
 import Collection from './pages/Collection';
@@ -15,8 +15,10 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <Router>
+      {/* Main application router */}
+        {/* Define routes for the application */}
         <Routes>
+          {/* Define the path and the component to render for each route */}
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/cart" element={<Cart />} />
@@ -27,7 +29,6 @@ const App = () => {
         <Route path="/place-order" element={<PlaceOrder />} />
         <Route path="/product/:productId" element={<Product />} />
       </Routes>
-    </Router>
     </>
   );
 };
